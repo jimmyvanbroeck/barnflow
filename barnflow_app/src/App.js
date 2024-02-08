@@ -3,22 +3,32 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='mt-5 container'>
+        <div className='card'>
+          <div className='card-header'>
+            Horsies
+          </div>
+          <div>
+            <table className='table table-hover'>
+              <thead>
+                <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Breed</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Dolf</td>
+                  <td>Something</td>
+                </tr>
+              </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+    
   );
 }
 
