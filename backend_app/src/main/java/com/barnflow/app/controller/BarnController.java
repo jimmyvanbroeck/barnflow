@@ -11,12 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "/barn")
 public class BarnController {
 
     private static Logger LOGGER = LoggerFactory.getLogger(BarnController.class);
 
-    @GetMapping
+    @GetMapping("/barns")
     public List<String> listBarns() {
         LOGGER.warn("Inside listbarns");
         List<String> barns = new ArrayList<>();

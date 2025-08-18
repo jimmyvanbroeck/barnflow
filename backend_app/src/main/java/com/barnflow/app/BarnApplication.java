@@ -19,5 +19,10 @@ public class BarnApplication {
         return new BarnController();
     }
 
+    @Bean
+    public SecurityConfig config() {
+        return new SecurityConfig();
+    }
+
 
 }
